@@ -1,0 +1,420 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.con{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.con::before{
+  z-index: 2;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  content: '';
+
+}
+
+.slides{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  opacity: 0;
+  animation: slideInOut 24s infinite;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+.slides:nth-child(2){
+  background-image: url(./images/clothes-twined-top-wedding-altar.jpg);
+}
+.slides:nth-child(3){
+  background-image: url(./images/wind-chimes-8320493.jpg);
+  animation-delay: 8s;
+}
+.slides:nth-child(4){
+  background-image: url(./images/beautiful-photozone-with-big-wreath-decorated-with-greenery-roses-centerpiece-candles-sides-garland-hanged-trees.jpg);
+  animation-delay: 16s;
+}
+.slides:nth-child(5){
+  background-image: url(./images/pexels-thatguycraig000-2306282.jpg);
+  animation-delay: 24s;
+}
+
+@keyframes slideInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); 
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0%); 
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%); 
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(-100%); 
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+header{
+  color: white;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  margin-top: 20px;
+}
+header h1{
+  font-family: "Anton SC", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  font-style: italic;
+text-shadow: 2px 2px black;
+margin-left: 10px;}
+header span{
+  font-size: 30px;
+  font-style: normal;
+  text-shadow: 3px 3px black;
+  
+}
+nav{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 250px;
+  position: relative;
+  margin-top: 18px;
+  padding-left: 10px;
+  gap: 15px;
+  
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px black;
+ font-family:'Baskerville',sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+ position: relative;
+}
+nav a::after{
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  left: 1px;
+
+  bottom: -5px;
+  content: '';
+  transition: width 0.3s ease;
+  background-color: white;
+}
+nav a:hover::after{
+  width: 100%;
+  
+}
+.icons{
+  margin-left: 150px;
+  margin-top: 18px;
+  font-size: 12px;
+  
+}
+.icons i{
+  padding-left: 25px;
+  cursor: pointer;
+}
+.texts{
+  margin-top: 120px;
+  padding-left: 25px;
+  text-shadow: 1px 1px black;
+  position: absolute;
+  z-index: 3;
+  color: white;
+}
+.texts h3{
+  color:rgb(136, 130, 130);
+  font-weight: bold;
+  font-size: 12px;
+
+}
+.texts h1{
+  color: white;
+  font-weight: bolder;
+  font-size: 35px;
+  margin-top: 10px;
+  gap: 0;
+  padding-top: 10px;
+  text-shadow: 1px 1px black;
+}
+.icons2{
+  margin-top: 30px;
+  
+  
+}
+.icons2 i{
+  font-size: 15px;
+  padding-right: 15px;
+  
+}
+.con2{
+  height: 400px;
+  display: flex;
+}
+.textz{
+  width: 50%;
+  height: 100%;
+  padding-top: 30px;
+  padding-left: 15px;
+  
+
+  
+}
+.pics{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divs{
+  position: absolute;
+  top: 580px;
+  left: 700px;
+
+  height: 260px;
+  width: 200px;
+}
+.pics .divs:nth-child(1) {
+  z-index: 5;
+  background-image: url(https://images.pexels.com/photos/1268877/pexels-photo-1268877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  top: 560px;
+  height: 280px;
+  
+  
+}
+
+.pics .divs:nth-child(2) {
+  z-index: 4;
+  background-image: url(https://images.pexels.com/photos/169207/pexels-photo-169207.jpeg);
+  background-size: cover;
+  top: 580px;
+  height: 260px;
+  left: 600px;
+  transform: rotate(-10deg);
+  
+  
+}
+.pics .divs:nth-child(3) {
+  z-index: 3;
+  background-image: url(https://images.pexels.com/photos/7100334/pexels-photo-7100334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  height: 260px;
+  left:820px ;
+  top: 580px;
+  transform: rotate(10deg); 
+}
+.con3{
+  height: 400px;
+  background-color: rgb(138, 130, 130);
+  display: flex;
+}
+.con31  {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+ 
+  
+  
+}
+.circ{
+  width: 33.3%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.circ i{
+  border-radius: 50%;
+  color: white;
+  font-size: 25px;
+  border: 2px solid white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circ i:hover{
+  color:gray;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  border: 2px solid gray;
+}
+.circ p{
+  font-size: 10px;
+  margin-top: 20px;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 550;
+  color: white;
+}
+.con32{
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+padding: 30px;
+align-items: center;
+
+}
+.con32 p{
+  font-size: 14px;
+  padding-left: 20px;
+  
+  text-align: justify;
+  margin-top: 20px;
+  color: white;
+  font-weight: 500;
+}
+.con4{
+  height: 740px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  background-color: rgb(237, 230, 230);
+ 
+  padding-top: 50px;
+  padding-bottom: 110px;
+}
+.con4small{
+  height: 200px;
+  width: 33.3%;
+  background-size: cover;
+  object-fit: cover;
+  overflow: hidden;
+}
+.con4small p{
+ position: absolute;
+  z-index: 3;
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
+  text-shadow: 2px 2px black;
+}
+.con4small img {
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.con4small:hover img {
+  transform: scale(1.1);
+}
+#pcon4{
+  font-weight: bolder;
+  color: gray;
+  text-shadow: 1px 1px black;
+
+}
+.con5{
+  background-color: black;
+  height: 500px;
+  display: flex;
+}
+.con51{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+ 
+}
+.con52{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 260px;
+  height: 200px;
+  perspective: 1000px;
+  object-fit: cover;
+  margin: 20px;}
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border: 3px solid white;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.flip-card-back {
+  background-color: gray;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+.flip-card i{
+  font-size: 50px;
+}
+.flip-card p{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 1px 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
