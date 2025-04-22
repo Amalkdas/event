@@ -31,18 +31,18 @@
   
 }
 .slides:nth-child(2){
-  background-image: url(./images/clothes-twined-top-wedding-altar.jpg);
+  background-image: url(../images/clothes-twined-top-wedding-altar.jpg);
 }
 .slides:nth-child(3){
-  background-image: url(./images/wind-chimes-8320493.jpg);
+  background-image: url(../images/wind-chimes-8320493.jpg);
   animation-delay: 8s;
 }
 .slides:nth-child(4){
-  background-image: url(./images/beautiful-photozone-with-big-wreath-decorated-with-greenery-roses-centerpiece-candles-sides-garland-hanged-trees.jpg);
+  background-image: url(../images/beautiful-photozone-with-big-wreath-decorated-with-greenery-roses-centerpiece-candles-sides-garland-hanged-trees.jpg);
   animation-delay: 16s;
 }
 .slides:nth-child(5){
-  background-image: url(./images/pexels-thatguycraig000-2306282.jpg);
+  background-image: url(../images/pexels-thatguycraig000-2306282.jpg);
   animation-delay: 24s;
 }
 
