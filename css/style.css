@@ -172,6 +172,7 @@ nav a:hover::after{
 }
 .con2{
   height: 400px;
+  position: relative;
   display: flex;
 }
 .textz{
@@ -185,6 +186,7 @@ nav a:hover::after{
 }
 .pics{
   width: 50%;
+  position:relative;
   height: 100%;
   display: flex;
   align-items: center;
@@ -192,8 +194,6 @@ nav a:hover::after{
 }
 .divs{
   position: absolute;
-  top: 580px;
-  left: 700px;
 
   height: 260px;
   width: 200px;
@@ -202,8 +202,7 @@ nav a:hover::after{
   z-index: 5;
   background-image: url(https://images.pexels.com/photos/1268877/pexels-photo-1268877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-size: cover;
-  top: 560px;
-  height: 280px;
+ 
   
   
 }
@@ -212,9 +211,10 @@ nav a:hover::after{
   z-index: 4;
   background-image: url(https://images.pexels.com/photos/169207/pexels-photo-169207.jpeg);
   background-size: cover;
-  top: 580px;
-  height: 260px;
-  left: 600px;
+  top: 90px;
+  left: 70px;
+  height: 240px;
+  
   transform: rotate(-10deg);
   
   
@@ -223,9 +223,9 @@ nav a:hover::after{
   z-index: 3;
   background-image: url(https://images.pexels.com/photos/7100334/pexels-photo-7100334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-size: cover;
-  height: 260px;
-  left:820px ;
-  top: 580px;
+  height: 240px;
+  top: 90px;
+  right: 60px;
   transform: rotate(10deg); 
 }
 .con3{
